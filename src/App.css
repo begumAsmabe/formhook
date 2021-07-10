@@ -1,0 +1,16 @@
+.wide-screen-label-cell {
+  display: none;
+  text-align: right;
+}
+.mobile-screen-label-cell label {
+  font-size: 13px;
+  font-weight: bold;
+}
+@media only screen and (min-width: 600px) {
+  .wide-screen-label-cell {
+    display: block;
+  }
+  .mobile-screen-label-cell label {
+    display: none;
+  }
+}
