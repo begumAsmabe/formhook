@@ -65,7 +65,7 @@ export default function Signup() {
 
 
 
-        axios.post('http://134.209.148.76:2000/api/v3/sign-up/talent', JSON.stringify(event),config)
+        axios.post('http://134.209.148.76:2000/api/v3/sign-up/fan', JSON.stringify(event),config)
           .then(function (response) {
             console.log(response,"----------------------------");
             alert("You have registered suceessfully")
