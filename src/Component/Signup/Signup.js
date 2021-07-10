@@ -51,12 +51,12 @@ export default function Signup() {
     const onSubmit = (event) => {
         event.captcha = true;
         console.log(event, "///////////////////////////////////");
-        let config = {
-            headers: {
-                Accept: '*/*',
-                "Content-Type": "application/json"
-            }
-          }
+//         let config = {
+//             headers: {
+//                 Accept: '*/*',
+//                 "Content-Type": "application/json"
+//             }
+//           }
         // axios.post('http://134.209.148.76:2000/api/v3/sign-up/talent', { event })
         // .then(res => console.log(res, "+++++++++"))
         // .catch(error => console.log(error,"%%%%%%%%"))
@@ -65,15 +65,15 @@ export default function Signup() {
 
 
 
-        axios.post('https://134.209.148.76:2000/api/v3/sign-up/fan', JSON.stringify(event),config)
-          .then(function (response) {
-            console.log(response,"----------------------------");
-            alert("You have registered suceessfully")
-          })
-          .catch(function (error) {
-            console.log(error,"=======================");
-            alert("Registration failed")
-          });
+//         axios.post('https://134.209.148.76:2000/api/v3/sign-up/fan', JSON.stringify(event),config)
+//           .then(function (response) {
+//             console.log(response,"----------------------------");
+//             alert("You have registered suceessfully")
+//           })
+//           .catch(function (error) {
+//             console.log(error,"=======================");
+//             alert("Registration failed")
+//           });
     }
 
 
